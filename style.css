@@ -1,4 +1,44 @@
-#panorama {
-    width: 600px;
-    height: 400px;
+* {
+    font-family: 'Share Tech Mono', monospace;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+.panorama{
+    width: 80vw;
+    height: 400px;
+    margin: auto;
+}
+
+/*====={Navigation Bar}=====*/
+nav{
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+ul.nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+}
+
+li.nav {
+    float: left;
+}
+
+li.nav a {
+    display: block;
+    color: azure;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+li.nav a:hover {
+    background-color: #221f1f;
+}
+/*Section End*/
