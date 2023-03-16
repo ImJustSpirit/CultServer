@@ -2,32 +2,25 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cube map</title>
+    <title>Test</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css"/>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"></script>
-    <style>
-    #panorama {
-        width: 600px;
-        height: 400px;
-    }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
 <div id="panorama"></div>
-<script>
-pannellum.viewer('panorama', {
-    "type": "cubemap",
-    "cubeMap": [
-        "/panoramas/server1/test/panorama_0.jpg",
-        "/panoramas/server1/test/panorama_1.jpg",
-        "/panoramas/server1/test/panorama_2.jpg",
-        "/panoramas/server1/test/panorama_3.jpg",
-        "/panoramas/server1/test/panorama_4.jpg",
-        "/panoramas/server1/test/panorama_5.jpg"
-    ]
-});
-</script>
-
+    <script>
+        pannellum.viewer('panorama', {
+            "type": "cubemap",
+            "cubeMap": [
+                "/panoramas/server1/test/panorama_0.jpg",
+                "/panoramas/server1/test/panorama_1.jpg",
+                "/panoramas/server1/test/panorama_2.jpg",
+                "/panoramas/server1/test/panorama_3.jpg",
+                "/panoramas/server1/test/panorama_4.jpg",
+                "/panoramas/server1/test/panorama_5.jpg"
+            ]
+        });
+    </script>
 </body>
 </html>
