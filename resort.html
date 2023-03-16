@@ -25,9 +25,10 @@
     <script>
         pannellum.viewer('server1-resort', {
             "default": {
-                "firstScene": "music",
+                "firstScene": "hall",
                 "author": "JustSpirit",
-                "sceneFadeDuration": 1000
+                "sceneFadeDuration": 1000,
+                "yaw": -90
             },
             "scenes": {
                 "music": {
@@ -59,7 +60,7 @@
                             "yaw": -90,
                             "targetPitch": 0,
                             "targetYaw": -90
-                        },
+                        }
                     ]
                 },
                 "hall": {
@@ -82,6 +83,15 @@
                             "yaw": 180,
                             "targetPitch": 0,
                             "targetYaw": 180
+                        },
+                        {
+                            "type": "scene",
+                            "text": "Bar",
+                            "sceneId": "bar",
+                            "pitch": 0,
+                            "yaw": -113,
+                            "targetPitch": 0,
+                            "targetYaw": -180
                         }
                     ]
                 },
@@ -97,6 +107,15 @@
                         "/panoramas/server1/Resort/Bar/panorama_5.png"
                     ],
                     "hotSpots": [
+                        {
+                            "type": "scene",
+                            "text": "Main Hall",
+                            "sceneId": "hall",
+                            "pitch": 0,
+                            "yaw": 0,
+                            "targetPitch": 0,
+                            "targetYaw": 0
+                        },
                         {
                             "type": "scene",
                             "text": "Music Room",
