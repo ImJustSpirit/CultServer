@@ -1,5 +1,4 @@
 * {
-    font-family: 'Share Tech Mono', monospace;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -42,3 +41,52 @@ li.nav a:hover {
     background-color: #221f1f;
 }
 /*Section End*/
+
+.grid-container {
+    display: grid;
+    padding: 2.5vw;
+    gap: 5vw;
+    margin: auto;
+    grid-auto-columns: auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.player {
+   
+}
+
+.split {
+    display: grid;
+    margin: 0 auto;
+    grid-auto-columns: auto;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.uname {
+
+}
+
+.dname {
+
+}
+
+.skin {
+
+}
+
+.present{
+    height: 50px;
+    width: 50px;
+    margin-bottom: 15px;
+}
+
+.absent{
+    height: 50px;
+    width: 50px;
+    margin-bottom: 15px;
+}
+
+.uuid {
+    
+}
