@@ -1,0 +1,83 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css"/>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <nav>
+        <ul class="nav">
+            <li class="nav"><a href="index.html">Home</a></li>
+            <li class="nav"><a href="info.html">Info</a></li>
+            <li class="nav"><a href="media.html">Media</a></li>
+            <li class="nav"><a href="players.html">Players</a></li>
+            <li class="nav"><a href="/server1/index.html">Cult</a></li>
+            <li class="nav"><a href="/server2/index.html">Cult 2: The Cultenning</a></li>
+            <li class="nav"><a href="/server3/index.html">Cult 3: Return of the Mods</a></li>
+            <li class="nav" style="float:right;"><a href="https://drive.google.com/drive/folders/1XRQ3_ov0_nZpu-_8LjGNtzKUOBmlclbD">Archive</a></li>
+        </ul>
+    </nav>
+    <div id="server1-resort" class="panorama"></div>
+    <script>
+        pannellum.viewer('server1-resort', {
+            "default": {
+                "firstScene": "music",
+                "author": "JustSpirit",
+                "sceneFadeDuration": 1000
+            },
+            "scenes": {
+                "music": {
+                    "title": "Music Room",
+                    "type": "cubemap",
+                    "cubeMap": [
+                        "/CultServer/panoramas/server1/Resort/Music/panorama_0.jpg",
+                        "/CultServer/panoramas/server1/Resort/Music/panorama_1.jpg",
+                        "/CultServer/panoramas/server1/Resort/Music/panorama_2.jpg",
+                        "/CultServer/panoramas/server1/Resort/Music/panorama_3.jpg",
+                        "/CultServer/panoramas/server1/Resort/Music/panorama_4.jpg",
+                        "/CultServer/panoramas/server1/Resort/Music/panorama_5.jpg"
+                    ],
+                    "hotSpots": [
+                        {
+                            "type": "scene",
+                            "text": "Main Hall",
+                            "sceneId": "hall",
+                            "pitch": 0,
+                            "yaw": 0,
+                            "targetPitch": 0,
+                            "targetYaw": 0
+                        }
+                    ]
+                },
+                "hall": {
+                    "title": "Main Hall",
+                    "type": "cubemap",
+                    "cubeMap": [
+                        "/CultServer/panoramas/server1/Resort/Hall/panorama_0.jpg",
+                        "/CultServer/panoramas/server1/Resort/Hall/panorama_1.jpg",
+                        "/CultServer/panoramas/server1/Resort/Hall/panorama_2.jpg",
+                        "/CultServer/panoramas/server1/Resort/Hall/panorama_3.jpg",
+                        "/CultServer/panoramas/server1/Resort/Hall/panorama_4.jpg",
+                        "/CultServer/panoramas/server1/Resort/Hall/panorama_5.jpg"
+                    ],
+                    "hotSpots": [
+                        {
+                            "type": "scene",
+                            "text": "Music Room",
+                            "sceneId": "music",
+                            "pitch": 0,
+                            "yaw": 180,
+                            "targetPitch": 0,
+                            "targetYaw": 180
+                        }
+                    ]
+                }
+            }
+        });
+    </script>
+</body>
+</html>
