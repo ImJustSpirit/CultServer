@@ -1,0 +1,101 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KatEmily</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css"/>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <nav>
+        <ul class="nav">
+            <li class="nav"><a href="index.html">Home</a></li>
+            <li class="nav"><a href="info.html">Info</a></li>
+            <li class="nav"><a href="media.html">Media</a></li>
+            <li class="nav"><a href="players.html">Players</a></li>
+            <li class="nav"><a href="server1.html">Cult</a></li>
+            <li class="nav"><a href="server2.html">Cult 2: The Cultenning</a></li>
+            <li class="nav"><a href="server3.html">Cult 3: Return of the Mods</a></li>
+            <li class="nav" style="float:right;"><a href="https://drive.google.com/drive/folders/1XRQ3_ov0_nZpu-_8LjGNtzKUOBmlclbD">Archive</a></li>
+        </ul>
+    </nav>
+    <div id="server1-katemily" class="panorama"></div>
+    <script>
+        pannellum.viewer('server1-katemily', {
+            "default": {
+                "firstScene": "bridge",
+                "author": "KatEmily",
+                "sceneFadeDuration": 1000
+            },
+            "scenes": {
+                "bridge": {
+                    "title": "Bridge",
+                    "type": "cubemap",
+                    "cubeMap": [
+                        "/panoramas/KatEmily/Bridge/panorama_0.png",
+                        "/panoramas/KatEmily/Bridge/panorama_1.png",
+                        "/panoramas/KatEmily/Bridge/panorama_2.png",
+                        "/panoramas/KatEmily/Bridge/panorama_3.png",
+                        "/panoramas/KatEmily/Bridge/panorama_4.png",
+                        "/panoramas/KatEmily/Bridge/panorama_5.png"
+                    ],
+                    "hotSpots": [
+                        {
+                            "type": "scene",
+                            "text": "Enterance",
+                            "sceneId": "enterance",
+                            "pitch": -6,
+                            "yaw": -1,
+                            "targetPitch": 0,
+                            "targetYaw": 0
+                        },
+                        {
+                            "type": "scene",
+                            "text": "Island",
+                            "sceneId": "island",
+                            "pitch": -16,
+                            "yaw": -8,
+                            "targetPitch": 0,
+                            "targetYaw": 0
+                        }
+                    ]
+                },
+                "island": {
+                    "title": "Island",
+                    "type": "cubemap",
+                    "cubeMap": [
+                        "/panoramas/KatEmily/Island/panorama_0.png",
+                        "/panoramas/KatEmily/Island/panorama_1.png",
+                        "/panoramas/KatEmily/Island/panorama_2.png",
+                        "/panoramas/KatEmily/Island/panorama_3.png",
+                        "/panoramas/KatEmily/Island/panorama_4.png",
+                        "/panoramas/KatEmily/Island/panorama_5.png"
+                    ],
+                    "hotSpots": [
+                        {
+                            "type": "scene",
+                            "text": "Enterance",
+                            "sceneId": "enterance",
+                            "pitch": 6,
+                            "yaw": 5,
+                            "targetPitch": 0,
+                            "targetYaw": 0
+                        },
+                        {
+                            "type": "scene",
+                            "text": "Bridge",
+                            "sceneId": "bridge",
+                            "pitch": 17,
+                            "yaw": 173,
+                            "targetPitch": 0,
+                            "targetYaw": 180
+                        }
+                    ]
+                },
+            }
+        })
+    </script>
+</body>
+</html>
